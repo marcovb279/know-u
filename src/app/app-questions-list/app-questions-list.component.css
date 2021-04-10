@@ -1,0 +1,20 @@
+.view-questions-list {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+  /* border-style: solid; */
+  /* border-color: blue; */
+}
+.view-questions-list-header {
+  height: 10%;
+  /* border-style: solid; */
+  /* border-color: brown; */
+}
+.view-questions-list-results {
+  height: 90%;
+  /* border-style: solid; */
+  /* border-color: green; */
+}

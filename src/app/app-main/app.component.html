@@ -1,0 +1,8 @@
+<div class="app">
+  <app-navbar class="app-navbar"> </app-navbar>
+  <div class="app-container" [@routeAnimations]="prepareRoute(outlet)">
+    <!-- <app-home></app-home> -->
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+  <app-footer class="app-footer"></app-footer>
+</div>

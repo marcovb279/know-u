@@ -1,0 +1,15 @@
+<mat-toolbar class="navbar-toolbar">
+  <mat-toolbar-row>
+    <div class="navbar-home">
+      <button mat-fab (click)="onClickHome()">
+        <mat-icon>home</mat-icon>
+      </button>
+    </div>
+    <!-- <div class="navbar-home">
+      <mat-icon-button aria-label="Example user verified icon" (click)="onClickHome">home</mat-icon-button>
+    </div> -->
+    <div class="navbar-tab">
+      <button mat-button *ngFor="let tab of tabs; index as idx;" (click)="onClickButton(idx)">{{ tab }}</button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

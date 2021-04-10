@@ -1,0 +1,16 @@
+<mat-toolbar class="footer-toolbar">
+  <mat-toolbar-row>
+    <div class="footer-author">
+      Designed by Olga Gtz
+    </div>
+    <div class="footer-links">
+      <button
+        mat-button
+        *ngFor="let item of items; index as idx"
+        (click)="solveLink(idx)"
+      >
+        {{ item }}
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

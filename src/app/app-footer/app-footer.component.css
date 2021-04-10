@@ -1,0 +1,14 @@
+.navbar-toolbar {
+}
+
+.footer-author {
+  position: relative;
+  margin: auto;
+  left: 0;
+}
+
+.footer-links {
+  position: relative;
+  margin: auto;
+  right: 0;
+}

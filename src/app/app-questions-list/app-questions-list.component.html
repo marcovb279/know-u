@@ -1,0 +1,21 @@
+<div class="view-questions-list">
+  <div class="view-questions-list-wrapper">
+    <div class="view-questions-list-header">
+      <input matInput placeholder="Search a question" [(ngModel)]="lookupText" />
+      <mat-form-field>
+        <mat-label>Category</mat-label>
+        <mat-select #mode value="all">
+          <mat-option *ngFor="let category of categories" value="{{category}}">{{category.charAt(0).toUpperCase() +
+            category.slice(1).toLowerCase()}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="view-questions-list-results">
+      <ul>
+        <li *ngFor="let question of questionsList">
+          {{question}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

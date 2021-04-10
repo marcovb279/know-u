@@ -1,0 +1,43 @@
+<div class="view-home">
+  <div class="view-home-wrapper">
+    <h2>Take your time for</h2>
+    <h1>knowing yourself!</h1>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Noun</mat-label>
+        <mat-select>
+          <mat-option
+            *ngFor="let noun of nouns"
+            value="{{ noun.toLowerCase() }}"
+          >
+            {{ noun }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Children</mat-label>
+        <mat-select>
+          <mat-option
+            *ngFor="let child of children"
+            value="{{ child.toLowerCase() }}"
+          >
+            {{ child }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Gender</mat-label>
+        <mat-select>
+          <mat-option
+            *ngFor="let gender of genders"
+            value="{{ gender.toLowerCase() }}"
+          >
+            {{ gender }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div><button mat-button>Search question</button></div>
+    <div><button mat-button>Random question</button></div>
+  </div>
+</div>
